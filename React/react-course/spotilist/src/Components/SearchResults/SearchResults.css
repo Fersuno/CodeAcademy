@@ -1,0 +1,27 @@
+h2 {
+  padding: 1rem;
+  border-bottom: thin solid var(--first-color);
+}
+
+.SearchResults {
+  width: 90%;
+  height: 950px;
+  overflow-y: scroll;
+  padding: 1rem;
+  border-radius: .7rem;
+  background-color: var(--second-color);
+  opacity: 0.90;
+  box-shadow: 0.3rem 0.3rem 1rem rgb(0 0 0 / 25%);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media screen and (max-width: 1020px) {
+  .SearchResults {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,135 @@
+/* Custom Properties */
+
+:root {
+  --first-color: #1aa3ff;
+  --first-alpha-color: rgba(54, 157, 226, 0.75);
+  --second-color: #14192D;
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-color: #006699;
+  --third-alpha-color: rgba(0, 102, 153, 0.75);
+  --white-color: #fff;
+  --gray-light-color: #f3f3f3;
+  --gray-dark-color: #666;
+  --black-color: #000;
+  --link-color: #14192D;
+  --title-color: rgb(29, 29, 29);
+  --text-color: rgb(12, 12, 12);
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --font: 'Readex Pro', sans-serif;
+  --max-width: 1200px;
+  --header-height: 4rem;
+}
+
+/* Reset */
+
+html {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after, 
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+h5 {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+h6 {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Site Style */
+
+h1 {
+  color: var(--first-color);
+  background-color: var(--second-color);
+  padding: 1rem;
+  text-align: center;
+  font-family: var(--font);
+  font-weight: bold;
+  font-size: 700;
+  transition: all 0.5s ease-in;
+}
+
+h1:hover {
+  color: var(--white-color);
+}
+
+.App {
+  height: 100%;
+  
+  background-image: url('./background_photo_desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  color: var(--first-color);
+  text-align: center;
+}
+
+.App-playlist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .App-playlist {
+    align-items: center;
+    flex-direction: column;
+    padding: 0 17% 10%;
+  }
+}

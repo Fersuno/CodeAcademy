@@ -1,0 +1,45 @@
+.Track {
+  display: flex;
+  align-items: center;
+  border-bottom: thin solid var(--first-color);
+}
+
+.Track:last-child {
+  border-bottom: 0;
+}
+
+.Track-action {
+  cursor: pointer;
+  padding: .5rem;
+  font-size: 1.05rem;
+  transition: all .25s ease-in;
+  border: 0px;
+  background-color: transparent;
+  color: var(--white-color);
+}
+
+.Track-action:hover {
+  color: var(--first-color);
+  opacity: 0.75;
+}
+
+.Track-information {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 72px;
+}
+
+.Track-information h3 {
+  font-size: .8rem;
+  margin-bottom: .22rem;
+  text-align: left;
+}
+
+.Track-information p {
+  font-size: .6rem;
+  font-weight: 300;
+  color: rgba(256, 256, 256, 0.8);
+  text-align: left;
+}
